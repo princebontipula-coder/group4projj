@@ -145,3 +145,103 @@ document.getElementById("productImage").src = productImage;
 </body>
 
 	
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shop - DYNAMIC SCENT</title>
+<link rel="stylesheet" href="shoppp.css">
+</head>
+<body>
+
+<div class="promo">
+SAVE UP TO 50%, FREE SHIPPING OVER ₱500
+</div>
+
+<section class="shop-header">
+<h1><u>DYNAMIC SCENT</u></h1>
+</section>
+
+<section class="products">
+
+<div class="product-card">
+<span class="badge">NEW</span>
+<img src="https://www.vamsbeauty.com/cdn/shop/files/Jasmine-Odesse-Perfume.png?v=1706044217&width=1600">
+<h3>Nightie</h3>
+<p>₱1,200</p>
+<button onclick="orderNow('Nightie',1200,'https://www.vamsbeauty.com/cdn/shop/files/Jasmine-Odesse-Perfume.png?v=1706044217&width=1600')">Buy Now</button>
+</div>
+
+<div class="product-card">
+<span class="badge">NEW</span>
+<img src="https://setaracosmetics.it/cdn/shop/files/Dunyaperfumebottleshowcasedagainstawhitebackground..png?v=1695468712">
+<h3>Coolday (100 ml)</h3>
+<p>₱1,350</p>
+<button onclick="orderNow('Coolday',1350,'https://setaracosmetics.it/cdn/shop/files/Dunyaperfumebottleshowcasedagainstawhitebackground..png?v=1695468712')">Buy Now</button>
+</div>
+
+<div class="product-card">
+<span class="badge">NEW</span>
+<img src="https://echoperfumelab.com/cdn/shop/files/9.png?v=1765852118&width=1200">
+<h3>Backburner (100 ml)</h3>
+<p>₱1,100</p>
+<button onclick="orderNow('Backburner',1100,'https://echoperfumelab.com/cdn/shop/files/9.png?v=1765852118&width=1200')">Buy Now</button>
+</div>
+
+<div class="product-card">
+<span class="badge">BEST SELLER</span>
+<img src="https://static.beautytocare.com/media/catalog/product/v/e/versace-eros-parfum-for-men-100ml.jpg">
+<h3>VERSACE Eros</h3>
+<p>₱3,500</p>
+<button onclick="orderNow('VERSACE Eros',3500,'https://static.beautytocare.com/media/catalog/product/v/e/versace-eros-parfum-for-men-100ml.jpg')">Buy Now</button>
+</div>
+
+<div class="product-card">
+<span class="badge">BEST SELLER</span>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXc8KR8iK2ORi7-zb_nIGpSp2C3wY2YhG7qQ&s">
+<h3>JPG LA MALE LE PARFUM</h3>
+<p>₱7,500</p>
+<button onclick="orderNow('JPG LA MALE LE PARFUM',7500,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXc8KR8iK2ORi7-zb_nIGpSp2C3wY2YhG7qQ&s')">Buy Now</button>
+</div>
+
+<div class="product-card">
+<span class="badge">PREMIUM</span>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwR0wTXW76jLIudrE4fGwFJrThJ0JXZ3gPig&s">
+<h3>JPG LA MALE ELIXIR</h3>
+<p>₱6,500</p>
+<button onclick="orderNow('JPG LA MALE ELIXIR',6500,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwR0wTXW76jLIudrE4fGwFJrThJ0JXZ3gPig&s')">Buy Now</button>
+</div>
+
+<div class="product-card">
+<span class="badge">PREMIUM</span>
+<img src="https://www.alternatescents.in/cdn/shop/files/IMG_0037_7460c5af-1dfd-4d6d-99cc-b8aa2426f3f8.jpg?v=1737107311&width=2048">
+<h3>Savage Elixir</h3>
+<p>₱5,500</p>
+<button onclick="orderNow('Savage Elixir',5500,'https://www.alternatescents.in/cdn/shop/files/IMG_0037_7460c5af-1dfd-4d6d-99cc-b8aa2426f3f8.jpg?v=1737107311&width=2048')">Buy Now</button>
+</div>
+
+<div class="product-card">
+<span class="badge">PREMIUM</span>
+<img src="https://www.rioperfumes.co.za/cdn/shop/products/White-Leather-parfum-Bella-Bellissima-web.jpg?v=1617609504">
+<h3>Tangiers for Men</h3>
+<p>₱1,500</p>
+<button onclick="orderNow('Tangiers for Men',1500,'https://www.rioperfumes.co.za/cdn/shop/products/White-Leather-parfum-Bella-Bellissima-web.jpg?v=1617609504')">Buy Now</button>
+</div>
+
+</section>
+
+<script>
+
+function orderNow(productName, price, image){
+
+localStorage.setItem("productName", productName);
+localStorage.setItem("productPrice", price);
+localStorage.setItem("productImage", image);
+
+window.location.href="order.html";
+
+}
+
+</script>
+
+</body>
+</html>
